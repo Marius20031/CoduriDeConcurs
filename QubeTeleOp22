@@ -26,6 +26,7 @@ public class QubeTeleOp22 extends LinearOpMode {
     private  CRServo Parcare = null;
     double  power   = 1;
     double mersbine=0;
+    int ok=1;
     public Servo ServomotorE = null;
     public Servo ServomotorV = null;
 
@@ -67,8 +68,11 @@ public class QubeTeleOp22 extends LinearOpMode {
 
         // run until the end of the match (driver presses STOP)
         while (opModeIsActive()) {
-            ServomotorE.setPosition(0.2);
-            ServomotorV.setPosition(0.2);
+            if(ok==1) {
+                ServomotorE.setPosition(0.2);
+                ServomotorV.setPosition(0.2);
+                ok=0;
+            }
             while(mersbine==0)
             {    if(gamepad2.dpad_down)
                 Mascota.setPosition(1);
