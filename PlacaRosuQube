@@ -125,11 +125,11 @@ public class PlacaRosuQube extends LinearOpMode {
         MotorDJ.setPower(0);
         sleep(500);
 
-        ServomotorE.setPosition(1);
-        ServomotorV.setPosition(1);
+        ServomotorE.setPosition(0.5);
+        ServomotorV.setPosition(0.5);
         sleep(1000);
 
-        Catretava1(0.3,-1950);
+        Catretava1(0.3,-1990);
         while (opModeIsActive() && !isStopRequested() && MotorSF.isBusy() && MotorSJ.isBusy() && MotorDF.isBusy() && MotorDJ.isBusy()) {
             angles = imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES);
             telemetry.addData("Heading: ", angles.firstAngle);
@@ -143,10 +143,12 @@ public class PlacaRosuQube extends LinearOpMode {
         MotorDJ.setPower(0);
         sleep(500);
 
-        ServomotorE.setPosition(0);
-        ServomotorV.setPosition(0);
+        ServomotorE.setPosition(0.2);
+        ServomotorV.setPosition(0.2);
 
-        Parcare(0.3,3400);
+        sleep(500);
+
+        Parcare(0.3,3300);
         //trebuie deplasat 74 de cm din est catre vest
         while (opModeIsActive() && !isStopRequested() && MotorSF.isBusy() && MotorSJ.isBusy() && MotorDF.isBusy() && MotorDJ.isBusy()) {
             angles = imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES);
