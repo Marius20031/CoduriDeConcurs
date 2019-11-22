@@ -82,8 +82,8 @@ public class QubeTeleOp22 extends LinearOpMode {
                 {ServomotorE.setPosition(0.5);
                 ServomotorV.setPosition(0.6);}
                 if(gamepad2.y)
-                {ServomotorE.setPosition(-0.5);
-                    ServomotorV.setPosition(-0.5);}
+                {ServomotorE.setPosition(0.2);
+                    ServomotorV.setPosition(0.2);}
                 while(gamepad2.dpad_left)
                 {Parcare.setPower(1);
                     sleep(100);
@@ -252,8 +252,8 @@ public class QubeTeleOp22 extends LinearOpMode {
             {ServomotorE.setPosition(0.5);
                 ServomotorV.setPosition(0.6);}
             if(gamepad2.y)
-            {ServomotorE.setPosition(-0.5);
-                ServomotorV.setPosition(-0.5);}
+            {ServomotorE.setPosition(0.2);
+                ServomotorV.setPosition(0.2);}
             while(gamepad2.dpad_right)
             {Parcare.setPower(-1);
                 if(!(gamepad2.dpad_down)) {
