@@ -246,10 +246,10 @@ public class QubeTeleOp22 extends LinearOpMode {
                 Mascota.setPosition(-1);
             if(gamepad2.a)
             {ServomotorE.setPosition(0.5);
-                ServomotorV.setPosition(0.5);}
+                ServomotorV.setPosition(0.6);}
             if(gamepad2.y)
             {ServomotorE.setPosition(-0.5);
-                ServomotorV.setPosition(-0.5);};
+                ServomotorV.setPosition(-0.5);}
             while(gamepad2.dpad_right)
             {Parcare.setPower(-1);
                 if(!(gamepad2.dpad_down)) {
