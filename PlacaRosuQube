@@ -255,4 +255,3 @@ public class PlacaRosuQube extends LinearOpMode {
         MotorDJ.setPower(p);
     }
 }
-//FINISHEDGATAAAAAAAAAAAAA
