@@ -16,7 +16,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.AxesReference;
 import org.firstinspires.ftc.robotcore.external.navigation.Orientation;
 
 
-@Autonomous(name= "QubeParcareCaramidaZidRosu")
+@Autonomous(name= "ParcareCaramidaZidRosu")
 public class QubeParcareCaramidaZidRosu extends LinearOpMode {
 
     public DcMotor MotorDF = null;
